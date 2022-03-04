@@ -7,6 +7,7 @@ clock=pygame.time.Clock()
 screen = pygame.display.set_mode((400,600))
 
 #creating objects of game
+tomato_img = pygame.image.load("tomato.png").convert_alpha()
 tomatoes=[]
 mushrooms=[]
 carrots=[]
@@ -39,6 +40,7 @@ while True:
         pygame.draw.rect(screen,(150,50,220),brinjal)
     for pumpkin in pumpkins:
         pygame.draw.rect(screen,(223,250,20),pumpkin)
+        
             
 
     pygame.display.update()
